@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylecad.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>CADASTRO</title>
+</head>
+<body>
+    <header>
+        <section class="box">
+            <section class="box1">
+                <img src="/img/pokebola.jpg" height="125" width="125">
+            </section>
+            <section class="Title">
+                <a href="/">
+                    <h1>POKEMON</h1>
+                </a>
+            </section>
+        </section>
+    </header>
+    <section class="formulario">
+        <form method="POST" action="/formulario">
+            <div class="child">
+                <label for="Image">Pokemon Image: </label>
+            </div>
+            <div>
+                <input type="url" name="Image" id="url"
+                placeholder="https://assets.pokemon.com/assets..."
+                pattern="https://assets.pokemon.com/assets/cms2/img/pokedex/full/.*" size="90"
+                required>
+            </div>
+            <div>
+                <label for="Name">Name: </label>
+            </div>
+            <div>
+                <input type="text" name="Name" placeholder="Typing name">
+            </div>
+            <div>
+                <label for="Type">Type: </label>
+            </div>
+            <div>
+                <input type="text" name="Type" placeholder="Typing the kind of pokemon">
+            </div>
+            <div>
+                <label for="Description">Description: </label>
+            </div>
+            <div>
+                <input type="text" name="Description" placeholder="Typing Description">
+            </div>
+            <div>
+                <label for="height">height: </label>
+            </div>
+            <div>
+                <input type="number" name="height" placeholder="Typing height">
+            </div>
+            <div>
+                <label for="weight">weight: </label>
+            </div>
+            <div>
+                <input type="number" name="weight" placeholder="Typing weight">
+            </div>
+            <div>
+                <label for="Categoria">Category: </label>
+            </div>
+            <div>
+                <input type="text" name="Category" placeholder="Typing Category">
+            </div>
+            <div>
+                <label for="abilities">abilities: </label>
+            </div>
+            <div>
+                <input type="text" name="abilities" placeholder="Typing abilities">
+            </div>
+            <button type="submit">Save</button>
+    </section>
+</body>
+</html>

@@ -1,0 +1,106 @@
+header {
+    margin-top: 0px;
+    background-color: rgb(72, 16, 168);
+    border-radius: 0px 0px 10px 10px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  body {
+    font-family: "Anton", sans-serif;
+    margin: 0px;
+  }
+  h3 {
+    color: black;
+    font-size: 23px;
+  }
+  h4 {
+    color: black;
+    font-size: 23px;
+  }
+  .box {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .box1 {
+    display: flex;
+    flex-grow: 0;
+    order: 0;
+    width: 8%;
+    align-items: center;
+    justify-content: center;
+  }
+  .Title {
+    display: flex;
+    flex-grow: 1;
+    order: 1;
+    width: 10%;
+  }
+  h1 {
+    font-size: 40px;
+    color: rgb(255, 211, 14);
+  }
+  h2 {
+    font-size: 30px;
+    color: grey;
+  }
+  .cadastro {
+    display: flex;
+    flex-grow: 0;
+    order: 2;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  #cad {
+    display: flex;
+    width: 50%;
+    border: 5px solid rgb(255, 123, 0);
+    border-radius: 20px;
+    background-color: rgb(255, 211, 14);
+    justify-content: center;
+  }
+  #cad:hover {
+    background-color: darkgoldenrod;
+  }
+  .container {
+    margin-top: 80px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px 168px;
+  }
+  .child {
+    display: flex;
+    width: 18%;
+    justify-content: center;
+    align-items: baseline;
+    border: 5px solid rgb(255, 123, 0);
+    border-radius: 25px;
+    text-align: center;
+  }
+  .child:hover {
+    background-color: rgb(255, 229, 112);
+  }
+  
+  section#mensagem {
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  span#close:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }

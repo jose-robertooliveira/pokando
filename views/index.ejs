@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>POKEMON</title>
+</head>
+<body>
+    <header>
+        <section class="box">
+            <section class="box1">
+                <img src="/img/pokebola.jpg" height="125" width="125" alt="pokebola" >
+            </section>
+            <section class="Title">
+                <a href="/">
+                    <h1>POKEMON</h1>
+                </a>
+            </section>
+            <section class="cadastro">
+                <div id="cad">
+                    <a href="/cadastro"><h2>Cadastrar</h2></a>
+                </div>
+            </section>
+        </section>
+    </header>
+    
+    <div class="container">
+            <% pokedex.forEach(i => { %>
+                <section class="child">
+                    <a href="/detalhes/<%= pokedex.indexOf(i) %>">
+                    <img src="<%= i.Image %>" height="150" width="150" alt="Pokemon">
+                    <h3><%= i.Nome %></h3>
+                    <h4><%= i.Type %></h4>
+                    </a>
+                </section>
+            <% }) %> 
+    </div>
+    
+</body>
+</html>

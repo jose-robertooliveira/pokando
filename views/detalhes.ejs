@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styled.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title><%= pokemon.Name %></title>
+</head>
+<body>
+    <header>
+        <section class="box">
+            <section class="box1">
+                <img src="/img/pokebola.jpg" height="100" width="100" alt="pokebola" >
+            </section>
+            <section class="Title">
+                <a href="/">
+                    <h1>POKEMON</h1>
+                </a>
+            </section>
+        </section>
+    </header>
+    <div class="container">
+        <section class="childimg">
+            <img src="<%= pokemon.Image %>">
+        </section>
+        <section class="childtxt">
+            <h2>Name: <%= pokemon.Name %></h2>
+            <h2>Type: <%= pokemon.Type %></h2>
+            <h2>Description: <%= pokemon.Description %></h2>
+            <h2>Height: <%= pokemon.Height %></h2>
+            <h2>Weight: <%= pokemon.Weight %></h2>
+            <h2>Category: <%= pokemon.Category %></h2>
+            <h2>Abilities: <%= pokemon.Abilities %></h2>
+        </section>
+    </div>
+    
+</body>
+</html>
